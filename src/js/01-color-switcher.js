@@ -11,6 +11,7 @@ refs.stop.addEventListener('click', stopChangeColor);
 
 // console.log(refs.start);
 
+
 function changeColor() {
   refs.start.setAttribute('disabled', 'disabled');
   timerId = setInterval(() => {

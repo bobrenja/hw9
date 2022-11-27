@@ -34,6 +34,7 @@ const options = {
       Notify.failure('Please choose a date in the future', {
         clickToClose: true,
         position: 'center-top',
+        timeout: 5000,
       });
       return;
     }
@@ -60,7 +61,16 @@ let timeFinish = null;
 
 function startTimer() {
   refs.start.setAttribute('disabled', 'disabled');
+  Notify.success('Run START timer!!', {
+    clickToClose: true,
+    position: 'center-top',
+    timeout: 2000,
+
+
+
+  });
   timerId = setInterval(changeDay, 1000);
+  
 
   console.log(refs.all);
 
